@@ -1,4 +1,8 @@
 /* Basic Style */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f8f8f8;
   color: #333;
@@ -11,6 +15,7 @@ body {
   text-align: right;
 }
 .aaa img {
+  display: block;
   width: 100%;
 }
 .aaa .more_inf {
@@ -129,6 +134,9 @@ button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 button.delete img:hover {
   transform: rotateZ(0);
